@@ -1,24 +1,20 @@
 #include<stdio.h>
 /**
  * main - Entry point
- * Return: Always 0 (Sucess)
-*/
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int lowercase = 'a';
-	
-	while (lowercase <= 'z');
-	
+	char lowercase, e, q;
+
+	e = 'e';
+	q = 'q';
+
+	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 	{
-		if (lowercase == 'e' || lowercase == 'q')
-		{
-			lowercase += 1;
-		}
-		else
-		{
-			putchar(lowercase);
-			lowercase += 1;
-		}
+	if (lowercase != e && lowercase != q)
+	putchar(lowercase);
 	}
+	putchar('\n');
 	return (0);
 }
